@@ -62,6 +62,7 @@ installcask spotify
 installcask steam
 installcask one-password
 installcask sparrow
+installcask iterm2
 
 
 # Remove outdated versions from the cellar
