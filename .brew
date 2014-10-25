@@ -32,6 +32,11 @@ brew install git
 brew install imagemagick
 brew install node
 brew install tree
+brew install mongodb
+brew install android-sdk
+brew install ffmpeg
+brew install sbt
+brew install cordova
 
 
 # Install native apps
@@ -42,9 +47,16 @@ function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
+installcask onepassword
+installcask anki
+installcask appcleaner
+installcask caffeine
+installcask chromecast
 installcask dropbox
+installcask google-drive
 installcask google-chrome
 installcask google-chrome-canary
+installcask firefox
 installcask imageoptim
 installcask iterm2
 installcask sublime-text
@@ -55,14 +67,23 @@ installcask android-file-transfer
 installcask skype
 installcask evernote
 installcask github
-installcask gfxcardstatus
-installcask mongohub
-installcask mongohub
+installcask robomongo
 installcask spotify
 installcask steam
 installcask one-password
 installcask sparrow
-installcask iterm2
+installcask inkscape
+installcask gimp
+installcask j-downloader
+installcask slack
+installcask cyberduck
+installcask xtrafinder
+installcask vyprvpn
+installcask subtitles
+installcask macpass
+installcask daisydisk
+installcask github
+installcask bittorrent-sync
 
 
 # Remove outdated versions from the cellar

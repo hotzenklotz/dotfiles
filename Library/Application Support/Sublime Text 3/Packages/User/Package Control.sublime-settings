@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"CoffeeScript",
+		"EditorConfig",
+		"Emmet",
+		"Google Spell Check",
+		"Jump Along Indent",
+		"LESS",
+		"Package Control",
+		"SideBarEnhancements",
+		"Solarized Toggle",
+		"SublimeLinter-coffee"
+	]
+}
