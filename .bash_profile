@@ -1,6 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
-export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.3/
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/23.0.2
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -45,3 +45,19 @@ export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize
 #increase open file limit / process limit
 ulimit -n 10000
 ulimit -u 1024
+
+export RSTUDIO_WHICH_R="/usr/local/bin/r"
+export PATH=/usr/local/opt/depot_tools:"$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# homebrew auto complete
+source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
+
+# CUDA / Caffe
+export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/lib:/usr/lib:/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_FALLBACK_LIBRARY_PATH
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/opt/caffe/python:$PYTHONPATH
+
+eval "$(thefuck --alias fuck)"
+

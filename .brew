@@ -31,29 +31,31 @@ brew install mongodb
 brew install android-sdk
 brew install ffmpeg
 brew install sbt
+brew install protobuf
+brew install wget
+brew install youtube-dl
+brew install nvm
 
 
 # Install native apps
-sudo brew tap caskroom/cask
-sudo brew tap caskroom/versions
-brew install brew-cask
+brew tap caskroom/fonts
+tap caskroom/cask
+tap caskroom/versions
+brew install caskroom/cask/brew-cask
 
 
 function installcask() {
-	brew cask install "${@}" 2> /dev/null
+  brew cask install "${@}" 2> /dev/null
 }
 
 installcask onepassword
-installcask anki
 installcask appcleaner
 installcask caffeine
-installcask chromecast
 installcask dropbox
 installcask google-drive
 installcask google-chrome
 installcask google-chrome-canary
 installcask firefox
-installcask imageoptim
 installcask iterm2
 installcask sublime-text3
 installcask the-unarchiver
@@ -66,21 +68,20 @@ installcask github
 installcask robomongo
 installcask spotify
 installcask steam
-installcask one-password
 installcask sparrow
 installcask gimp
 installcask jdownloader2
 installcask slack
 installcask cyberduck
-installcask xtrafinder
-installcask vyprvpn
-installcask subtitles
 installcask macpass
-installcask daisydisk
 installcask github
-installcask bittorrent-sync
 installcask spectacle
 installcask inkscape
+installcask quicklook-csv
+installcask quicklook-json
+installcask licecap
+installcask font-open-sans
+installcask font-source-sans-pro
 
 
 # Remove outdated versions from the cellar
