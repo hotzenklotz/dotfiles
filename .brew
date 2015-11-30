@@ -35,12 +35,13 @@ brew install protobuf
 brew install wget
 brew install youtube-dl
 brew install nvm
+brew install python
 
 
 # Install native apps
 brew tap caskroom/fonts
-tap caskroom/cask
-tap caskroom/versions
+brew tap caskroom/cask
+brew tap caskroom/versions
 brew install caskroom/cask/brew-cask
 
 
@@ -48,7 +49,7 @@ function installcask() {
   brew cask install "${@}" 2> /dev/null
 }
 
-installcask onepassword
+installcask 1password
 installcask appcleaner
 installcask caffeine
 installcask dropbox
@@ -64,17 +65,15 @@ installcask vlc
 installcask android-file-transfer
 installcask skype
 installcask evernote
-installcask github
 installcask robomongo
 installcask spotify
 installcask steam
-installcask sparrow
 installcask gimp
-installcask jdownloader2
+installcask jdownloader
 installcask slack
 installcask cyberduck
 installcask macpass
-installcask github
+installcask github-desktop
 installcask spectacle
 installcask inkscape
 installcask quicklook-csv
@@ -82,6 +81,7 @@ installcask quicklook-json
 installcask licecap
 installcask font-open-sans
 installcask font-source-sans-pro
+installcask intellij-idea
 
 
 # Remove outdated versions from the cellar
