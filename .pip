@@ -1,3 +1,4 @@
-pip install --user numpy
-pip install --user thefuck
-pip install --user flask
+pip install numpy
+pip install thefuck
+pip install flask
+pip install protobuf>=3.0.0a3
